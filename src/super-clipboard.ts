@@ -1,3 +1,3 @@
 export function superClipboard() {
-  console.log("super clipboard");
+  console.log('super clipboard');
 }
