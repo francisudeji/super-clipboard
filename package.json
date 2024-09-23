@@ -2,7 +2,7 @@
   "name": "super-clipboard",
   "version": "0.0.0",
   "description": "A lightweight wrapper around the Clipboard API to simplify copying and pasting text or images in modern browsers",
-  "main": "dist/index.js",
+  "main": "dist/super-clipboard.js",
   "scripts": {
     "build": "tsc",
     "ci": "npm run check-format && npm run check-exports && npm run test && npm run build",
