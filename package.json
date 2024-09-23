@@ -15,9 +15,16 @@
     "prepublishOnly": "npm run ci"
   },
   "keywords": [
-    "demo",
-    "typescript",
-    "package"
+    "clipboard",
+    "copy",
+    "paste",
+    "text",
+    "image",
+    "copy-paste",
+    "copy-image",
+    "copy-text",
+    "paste-text",
+    "paste-image"
   ],
   "homepage": "https://github.com/francisudeji/super-clipboard",
   "bugs": {
@@ -39,5 +46,9 @@
     "prettier": "^3.3.3",
     "typescript": "^5.6.2",
     "vitest": "^2.1.1"
+  },
+  "exports": {
+    ".": "./dist/super-clipboard.js",
+    "./package.json": "./package.json"
   }
 }
