@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Clipboard</title>
+  </head>
+  <body>
+    <h1>Super Clipboard Examples</h1>
+    <textarea placeholder="copy or paste here..."></textarea>
+    <div>
+      <button class="copy-button">Copy text to clipboard</button>
+      <button class="paste-button">Paste text from clipboard</button>
+    </div>
+
+    <script type="module">
+      import {
+        copyText,
+        pasteText,
+      } from './node_modules/super-clipboard/dist/super-clipboard.js';
+      const textarea = document.querySelector('textarea');
+
+      const copyButton = document.querySelector('.copy-button');
+      copyButton.addEventListener('click', async () => {
+        const text = 'COPY PASTA';
+        await copyText(text);
+      });
+
+      const pasteButton = document.querySelector('.paste-button');
+      pasteButton.addEventListener('click', async () => {
+        const text = await pasteText();
+        textarea.value = text;
+      });
+    </script>
+  </body>
+</html>
